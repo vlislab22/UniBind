@@ -28,7 +28,7 @@
             <h1 class="col-md-12 text-center">
                 UniBind: LLM-Augmented Unified and Balanced Representation Space to Bind Them All<br /> 
                 <small>
-                    Accepted to CVPR 2024
+                    CVPR 2024
                 </small>
             </h1>
         </div>
@@ -38,7 +38,7 @@
                 <ul class="list-inline">
                     <li>
 			<img src="./images/huiyi1.png" height="80px"><br>
-                        <a href="" >
+                        <a href="https://qc-ly.github.io/" >
                            Yuanhuiyi Lyu*
                         </a>
                         
@@ -141,21 +141,31 @@
                     centered representation space; however, the space may be
                     sub-optimal as it leads to an unbalanced representation
                     space among all modalities. Moreover, the category names
-                    are directly used to extract text embeddings for the downstream tasks, making it hardly possible to represent the 
-                    semantics of multi-modal data. The "out-of-the-box" insight
+                    are directly used to extract text embeddings for the down-
+                    stream tasks, making it hardly possible to represent the se-
+                    mantics of multi-modal data. The "out-of-the-box" insight
                     of our UniBind is to make the alignment centers modality-
-                    agnostic and further learn a unified and balanced representation space, empowered by the large language models (LLMs). UniBind is superior in its flexible application
-                    to all CLIP-style models and delivers remarkable performance boosts. To make this possible, we 1) construct a
+                    agnostic and further learn a unified and balanced repre-
+                    sentation space, empowered by the large language mod-
+                    els (LLMs). UniBind is superior in its flexible application
+                    to all CLIP-style models and delivers remarkable perfor-
+                    mance boosts. To make this possible, we 1) construct a
                     knowledge base of text with the help of LLMs and multi-
                     modal LLMs; 2) adaptively build LLM-augmented class-
                     wise embedding centers on top of the knowledge base and
                     encoded visual embeddings; 3) align all the embeddings
                     to the LLM-augmented embedding centers via contrastive
                     learning to achieve a unified and balanced representation
-                    space. UniBind shows strong zero-shot recognition performance gains over prior arts by an average of 6.36%. Finally, we achieve new state-of-the-art performance, e.g., a
+                    space. UniBind shows strong zero-shot recognition perfor-
+                    mance gains over prior arts by an average of 6.36%. Fi-
+                    nally, we achieve new state-of-the-art performance, e.g., a
                     6.75% gain on ImageNet, on the multi-modal fine-tuning
                     setting while reducing 90% of the learnable parameters
                 </p>
+            </div>
+
+            <div class="col-md-8 col-md-offset-2">
+                <video width="854" height="480" controls src="./images/demo.mp4" class="img-responsive" alt="vis_res" class="center"><br>        
             </div>
         </div>
 
@@ -249,10 +259,11 @@
                 <div class="row align-items-center">
                     <div class="col py-3">
                         <pre class="border">             
-@article{,
+@article{lyu2024unibind,
   title={UniBind: LLM-Augmented Unified and Balanced Representation Space to Bind Them All},
   author={Lyu,Yuanhuiyi and Zheng,Xu and Zhou,Jiazhou and Wang,Lin},
-  journal={arXiv},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={}
   year={2024}
 }
 </pre>
